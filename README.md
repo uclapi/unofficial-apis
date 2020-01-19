@@ -116,9 +116,10 @@ Deploy with Docker.
 
 Specify the following environment variables
 
-| Variable   | Remarks               |
-| ---------- | --------------------- |
-| PORT       | Defaults to 3000      |
-| REDIS_HOST | Defaults to localhost |
-| REDIS_PORT | Defaults to 6379      |
-| REDIS_TTL  | Defaults to 5 minutes |
+| Variable       | Remarks               |
+| -------------- | --------------------- |
+| PORT           | Defaults to 3000      |
+| REDIS_HOST     | Defaults to localhost |
+| REDIS_PASSWORD | Optional              |
+| REDIS_PORT     | Defaults to 6379      |
+| REDIS_TTL      | Defaults to 5 minutes |
