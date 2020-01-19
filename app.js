@@ -4,6 +4,8 @@ import api from './api'
 
 const app = express()
 
+const PORT = process.env.PORT || 3000
+
 app.get(`/`, (req, res) => res.send(`Hello`))
 
 app.get(`/modules`, async (req, res) => res.json(await api.moduleCatalogue.getAllModules()))
@@ -21,7 +23,7 @@ app.get(`/societies`, async (req, res) => res.json(await api.studentUnion.getSoc
 app.get(`/societies/:id`, async (req, res) => res.json(await api.studentUnion.getSocietyById(req.params.id)))
 
 app.listen(
-  3000,
+  PORT,
   () => {
     console.log(`Server running`)
   }
