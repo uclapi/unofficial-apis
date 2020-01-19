@@ -1,0 +1,35 @@
+{
+  "name": "unofficial-apis",
+  "version": "1.0.0",
+  "description": "unofficial UCL APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app.js",
+    "start:dev": "nodemon --exec babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hueyy/unofficial-apis.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hueyy/unofficial-apis/issues"
+  },
+  "homepage": "https://github.com/hueyy/unofficial-apis#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cache-manager": "^2.10.1",
+    "cache-manager-ioredis": "^1.0.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "slugify": "^1.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "nodemon": "^2.0.2"
+  }
+}
