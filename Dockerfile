@@ -2,13 +2,13 @@ FROM node:lts-alpine
 
 WORKDIR /usr/src/server
 
+RUN mkdir -p dist 
 COPY package*.json ./
 
-RUN npm ci --only=production
+RUN npm ci
 
 COPY . .
 
 EXPOSE ${PORT}
 
-USER node
 CMD [ "npm", "run", "start" ]
