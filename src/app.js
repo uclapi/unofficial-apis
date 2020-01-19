@@ -6,7 +6,7 @@ const app = express()
 
 const PORT = process.env.PORT || 3000
 
-app.get(`/`, (req, res) => res.send(`Hello`))
+app.get(`/`, (req, res) => res.send(`See the github: https://github.com/hueyy/unofficial-apis`))
 
 app.get(`/modules`, async (req, res) => res.json(await api.moduleCatalogue.getAllModules()))
 
